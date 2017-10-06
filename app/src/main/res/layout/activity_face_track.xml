@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SurfaceView
+        android:id="@+id/sv_preview"
+        app:layout_heightPercent="75%"
+        app:layout_widthPercent="100%" />
+
+    <com.jqorz.demo.facedetectionstudy.widget.FaceMask
+        android:id="@+id/fm_mask"
+        app:layout_heightPercent="75%"
+        app:layout_widthPercent="100%" />
+
+
+    <TextView
+        android:id="@+id/tv_FaceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sv_preview"
+        android:padding="10dp"
+        android:textSize="14sp" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jqorz.demo.facedetectionstudy.frame.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_Image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/icon_face_image" />
+
+    <TextView
+        android:id="@+id/tv_Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_Image"
+        android:layout_centerInParent="true"
+        android:gravity="left"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="Face++人脸检测技术\n\nFace++是新一代云端视觉服务平台，提供一整套世界领先的人脸检测，人脸识别，面部分析的视觉技术服务。"
+        android:textColor="@color/black2"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_FaceDetection"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_bg_left"
+            android:stateListAnimator="@drawable/main_btn_selector"
+            android:text="@string/frame_face_detection"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_FaceTrack"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_btn_bg_right"
+            android:stateListAnimator="@drawable/main_btn_selector"
+            android:text="@string/frame_face_track"
+            android:textColor="@color/white"
+
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

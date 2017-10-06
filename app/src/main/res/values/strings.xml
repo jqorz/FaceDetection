@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">人脸识别</string>
+    <string name="frame_face_detection">人脸检测</string>
+    <string name="frame_face_track">人脸追踪</string>
+</resources>
